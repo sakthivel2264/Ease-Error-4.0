@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -23,10 +23,10 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
-        <ul className={`flex gap-8  ${isMobileMenuOpen ? 'block' : 'hidden'} lg:flex`}>
-          <li><a className='hover:text-[#1f75ff] transition-colors text-[1rem] font-semibold' href="#about">About</a></li>
-          <li><a className='hover:text-[#1f75ff] transition-colors text-[1rem] font-semibold' href="#bonds">Bonds</a></li>
-          <li><button className='hover:text-[#1f75ff] transition-colors text-[1rem] font-semibold ' href="#register">REGISTER</button></li>
+        <ul className={`flex gap-8 ${isMobileMenuOpen ? 'block' : 'hidden'} lg:flex`}>
+          <Link to="/about" className='hover:text-[#1f75ff] transition-colors text-[1rem] font-semibold'>About</Link>
+          <Link to="/bonds" className='hover:text-[#1f75ff] transition-colors text-[1rem] font-semibold'>Bonds</Link>
+          <Link to="/register" className='hover:text-[#1f75ff] transition-colors text-[1rem] font-semibold'>REGISTER</Link>
         </ul>
       </div>
     </div>
