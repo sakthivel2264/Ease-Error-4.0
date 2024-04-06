@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <div className='z-50 w-full h-16 backdrop-filter backdrop-blur-3xl bg-opacity-65 border-b flex items-center justify-center sticky top-0 left-0'>
       <div className='max-w-7xl w-full flex items-center justify-between p-10'>
-        <h6 className='font-bold'>E2 BOND</h6>
+        <h6 className='font-bold text-3xl'>E² Bond</h6>
         <div className="block lg:hidden">
           <button onClick={toggleMobileMenu} className="text-gray-400 hover:text-gray-500 focus:outline-none focus:text-gray-500">
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -24,10 +24,9 @@ const Navbar = () => {
           </button>
         </div>
         <ul className={`flex gap-8  ${isMobileMenuOpen ? 'block' : 'hidden'} lg:flex`}>
-          <li><a className='hover:text-fuchsia-500 transition-colors text-xs sm:text-base' href="#register">REGISTER</a></li>
-          <li><a className='hover:text-fuchsia-500 transition-colors text-xs sm:text-base' href="#about">About</a></li>
-          <li><a className='hover:text-fuchsia-500 transition-colors text-xs sm:text-base' href="#bonds">Bonds</a></li>
-          <li><a className='hover:text-fuchsia-500 transition-colors text-xs sm:text-base' href="#parites">Parties</a></li>
+          <li><a className='hover:text-[#1f75ff] transition-colors text-[1.5rem] ' href="#about">About</a></li>
+          <li><a className='hover:text-[#1f75ff] transition-colors text-[1.5rem] ' href="#bonds">Bonds</a></li>
+          <li><a className='hover:text-[#1f75ff] transition-colors text-[1.5rem] ' href="#register">REGISTER</a></li>
         </ul>
       </div>
     </div>
