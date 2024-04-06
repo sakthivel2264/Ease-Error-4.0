@@ -17,12 +17,13 @@ const container = document.getElementById("root");
 
 root.render(
   <React.StrictMode>
-    <ThirdwebProvider desiredChainId={ChainId.Sepolia}>
-      {/* <Router> */}
-        <ElectoralBondSystemProvider>
-          <App />
-        </ElectoralBondSystemProvider>
-      {/* </Router> */}
+    <ThirdwebProvider
+      desiredChainId={ChainId.Sepolia} >
+        <Router>
+          <ElectoralBondSystemProvider>
+            <App />
+          </ElectoralBondSystemProvider>
+        </Router>
     </ThirdwebProvider>
   </React.StrictMode>
 );
