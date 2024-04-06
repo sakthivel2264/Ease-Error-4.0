@@ -1,5 +1,5 @@
 import React from 'react'
-import Spline from "@splinetool/react-spline"
+import hero from "../assets/hero.png"
 import { ConnectWallet } from "@thirdweb-dev/react";
 
 const Hero = () => {
@@ -13,14 +13,13 @@ const Hero = () => {
         <p className='max-w-md text-2xl md:text-xl text-zinc-200 capitalize text-center'>Empowering transparent political funding through blockchain. Join us in reshaping democracy with integrity and trust</p>
         <div className='w-full flex items-center justify-center md:justify-start gap-4'>
        
+      <img src={hero} alt="Hero-img"  className='z-10 '/>
           <ConnectWallet/>
           <button className='w-48 h-12 text-sm sm:text-base rounded hover:bg-white hover:text-white hover:bg-opacity-5 transition-colors border' >Contact</button>
         </div>
       </div>
 
-      <div className='w-full md:h-2/3 md:w-[600px] flex items-center justify-center relative -z-10 bg-rd-500 '>
-        {/* <Spline className="aspect-auto flex sm:scale-[.35] lg:scale-[.5] items-center justify-center md:justify-start" scene='https://prod.spline.design/mytvKHOk8swskC-c/scene.splinecode'/> */}
-      </div>
+    
     </header>
   )
 }

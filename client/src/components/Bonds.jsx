@@ -156,7 +156,7 @@ const Bonds= () => {
     return (
         <>
          <h2 className='text-4xl text-white text-center p-28'>Existing Bonds Data</h2>
-      <div className="w-full overflow-hidden h-[500px]" style={{ scrollBehavior: 'smooth' }} ref={sliderRef} id="bonds">
+      <div className="w-full overflow-hidden h-[500px]" style={{ scrollBehavior: 'smooth' }} ref={sliderRef} >
           
         <div className="flex flex-row gap-20">
          
