@@ -24,9 +24,9 @@ const Navbar = () => {
           </button>
         </div>
         <ul className={`flex gap-8  ${isMobileMenuOpen ? 'block' : 'hidden'} lg:flex`}>
-          <li><a className='hover:text-[#1f75ff] transition-colors text-[1.5rem] ' href="#about">About</a></li>
-          <li><a className='hover:text-[#1f75ff] transition-colors text-[1.5rem] ' href="#bonds">Bonds</a></li>
-          <li><a className='hover:text-[#1f75ff] transition-colors text-[1.5rem] ' href="#register">REGISTER</a></li>
+          <li><a className='hover:text-[#1f75ff] transition-colors text-[1rem] font-semibold' href="#about">About</a></li>
+          <li><a className='hover:text-[#1f75ff] transition-colors text-[1rem] font-semibold' href="#bonds">Bonds</a></li>
+          <li><button className='hover:text-[#1f75ff] transition-colors text-[1rem] font-semibold ' href="#register">REGISTER</button></li>
         </ul>
       </div>
     </div>
