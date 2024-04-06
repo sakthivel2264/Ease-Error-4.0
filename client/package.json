@@ -9,6 +9,7 @@
     "deploy": "yarn build && npx thirdweb@latest upload dist"
   },
   "dependencies": {
+    "@splinetool/react-spline": "^2.2.6",
     "@tailwindcss/forms": "^0.5.7",
     "@thirdweb-dev/react": "^4",
     "@thirdweb-dev/sdk": "^4",

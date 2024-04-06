@@ -1,53 +1,37 @@
-import React, {useState} from 'react'
-import {HiMenuAlt4} from 'react-icons/hi'
-import {AiOutlineClose} from 'react-icons/ai'
+import React, { useState } from 'react';
 
 
-const NavBarItem =({title, classProps }) =>{
-  return (
-    <li className={`mx-4 cursor-pointer ${classProps}`}>
-      {title}
-    </li>
+const Navbar = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  )
-}
-
-const NavBar = () => {
-  const [toggleMenu, setToggleMenu] = useState(false)
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
 
   return (
-    <nav className='w-full  flex md:justify-center justify-between items-center  '>
-      <div className='md:flex-[0.5] flex-initial justify-center items-center'>
-     
-        <h2 >E² Bond</h2>
-        
+    <div className='z-50 w-full h-16 backdrop-filter backdrop-blur-3xl bg-opacity-65 border-b flex items-center justify-center sticky top-0 left-0'>
+      <div className='max-w-7xl w-full flex items-center justify-between p-10'>
+        <h6 className='font-bold'>E2 BOND</h6>
+        <div className="block lg:hidden">
+          <button onClick={toggleMobileMenu} className="text-gray-400 hover:text-gray-500 focus:outline-none focus:text-gray-500">
+            <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              {isMobileMenuOpen ? (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+              ) : (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
+              )}
+            </svg>
+          </button>
+        </div>
+        <ul className={`flex gap-8  ${isMobileMenuOpen ? 'block' : 'hidden'} lg:flex`}>
+          <li><a className='hover:text-fuchsia-500 transition-colors text-xs sm:text-base' href="#register">REGISTER</a></li>
+          <li><a className='hover:text-fuchsia-500 transition-colors text-xs sm:text-base' href="#about">About</a></li>
+          <li><a className='hover:text-fuchsia-500 transition-colors text-xs sm:text-base' href="#bonds">Bonds</a></li>
+          <li><a className='hover:text-fuchsia-500 transition-colors text-xs sm:text-base' href="#parites">Parties</a></li>
+        </ul>
       </div>
-      <ul className='text-white md:flex hidden list-none flex-row justify-between items-center flex-initial'>
-        {["Register","About","Bonds","Parties"].map((items,index)=>(
-          <NavBarItem key={items + index} title={items}/>
-        ))}
-        <li className='bg-[#2952e3] py-2 px-7 mx-12 rounded-full cursor-pointer hover:bg-[#2546bd]'>
-          Connect
-        </li>
-      </ul>
-      <div className='flex relative '>
-        {toggleMenu? <AiOutlineClose fontSize={28} className='text-white md:hidden cursor-pointer' onClick={()=>{setToggleMenu(false)}}/>:
-        <HiMenuAlt4 fontSize={28} className='text-white md:hidden cursor-pointer' onClick={()=>setToggleMenu(true)}/>}
-        {toggleMenu && (
-          <ul className="z-10 fixed top-0 -right-2 p-3 w-[70vw] h-screen shadow-2xl md:hidden list-none flex flex-col justify-start items-end rounded-md blue-glassmorphism text-white animate-slide-in">
-            <li className='text-xl w-full my-2'>
-              <AiOutlineClose onClick={()=> setToggleMenu(false)}/>
-            </li>
-            {["Register","About","Bonds","Parties"].map((items,index)=>(
-          <NavBarItem key={items + index} title={items} classProps="my-2 text-lg"/>
-        ))}
-          </ul>
-        )}
-
-      </div>
-
-    </nav>
-  )
+    </div>
+  );
 }
 
-export default NavBar
+export default Navbar;
