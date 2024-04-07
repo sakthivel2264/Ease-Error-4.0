@@ -13,7 +13,7 @@ export default function party() {
       params: [_name, _partyAddress] 
     });
     const { transactionHash } = await sendTransaction(transaction);
-    return transactionHash
+    // return transactionHash
   }
   return (
     <form onSubmit={handleSubmit}>
