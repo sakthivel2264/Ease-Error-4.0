@@ -4,7 +4,7 @@ import aboutimg from "../assets/About.png"
 
 const About = () => {
   return (
-    <section className="h-fit min-h-screen w-full py-8 mt-28 gradient-bg-welcomes">
+    <section className="h-fit min-h-screen w-full py-8 mt-6 gradient-bg-welcomes">
       <div>
         <h2 className='text-center text-5xl p-4 m-2 font-bold'>About</h2>
       <div className='flex flex-row m-3 justify-evenly mt-10'>
