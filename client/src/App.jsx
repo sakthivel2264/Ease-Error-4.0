@@ -13,30 +13,20 @@ const App = () => {
   return (
     <>
     <Router>
-      <div className='flex min-h-screen h-fit flex-col items-center justify-center relative '>
-        <Navbar />
-        <div className="gradient-bg-welcome w-full ">
-        </div>
+      <div className='flex min-h-screen h-fit flex-col  relative overflow-hidden '>
+      <Navbar />
         <Routes>
+        
           <Route path="/" element={<Hero/>} />
           <Route path="/about" element={<About />} />
           <Route path="/bonds" element={<Bonds />} />
           <Route path="/register" element={<RegisterForm />} />
+          <Route path='/party' element={<Partyapp/>}/>
         </Routes>
         <Footer />
       </div>
     </Router>
-    {address && (
-          <div className="border bg-red-100 w-full h-[500px]">
-            <div className="border bg-green-200">
-              <h3>Party</h3>
-             <Partyapp/>
-
-            </div>
-            {/* <ContactList /> */}
-          </div>
-        )}
-    </>
+        </>
   );
 }
 

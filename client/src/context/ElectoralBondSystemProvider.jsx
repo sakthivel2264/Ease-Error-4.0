@@ -20,7 +20,7 @@ export const ElectoralBondSystemProvider = ({ children }) => {
         setSigner(signer);
 
         const networkId = await provider.getNetwork().then(network => network.chainId);
-        const contractAddress = 'CONTRACT_ADDRESS_HERE'; // Replace with your contract address
+        const contractAddress = '0x6Be19244a8f5B307A07DCa6A135276D3EfF2E965'; // Replace with your contract address
 
         // Define the interface of the contract
         const contractInterface = [

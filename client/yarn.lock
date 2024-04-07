@@ -2005,22 +2005,22 @@
   resolved "https://registry.npmjs.org/@tanstack/virtual-core/-/virtual-core-3.2.0.tgz"
   integrity sha512-P5XgYoAw/vfW65byBbJQCw+cagdXDT/qH6wmABiLt4v4YBT2q2vqCOhihe+D1Nt325F/S/0Tkv6C5z0Lv+VBQQ==
 
-"@thirdweb-dev/auth@4.1.55":
-  version "4.1.55"
-  resolved "https://registry.npmjs.org/@thirdweb-dev/auth/-/auth-4.1.55.tgz"
-  integrity sha512-8lqSzZL6y5TCTj24GCaUa8e4j58xnpn4CaNnXpHvmXg7VZxOE+EJS8Kg/vJmKk7LcYCxWo13V+5QXA6nFIhA6Q==
+"@thirdweb-dev/auth@4.1.56":
+  version "4.1.56"
+  resolved "https://registry.npmjs.org/@thirdweb-dev/auth/-/auth-4.1.56.tgz"
+  integrity sha512-rVclVgeZROc0ylcugxMc2HpvfWXgd/8kiMg5NdCUfzoaz3LHYVbLmvPCSrFiPHtbpI/Y51kbvcRA6FwAdcvPRA==
   dependencies:
     "@fastify/cookie" "^9.3.1"
-    "@thirdweb-dev/wallets" "2.4.33"
+    "@thirdweb-dev/wallets" "2.4.34"
     cookie "^0.6.0"
     fastify-type-provider-zod "^1.1.9"
     uuid "^9.0.1"
     zod "^3.22.4"
 
-"@thirdweb-dev/chains@0.1.88":
-  version "0.1.88"
-  resolved "https://registry.npmjs.org/@thirdweb-dev/chains/-/chains-0.1.88.tgz"
-  integrity sha512-2xRRCW+mDcfYniVHA09fTi8sUV783XyQBuHOMKtZw8PnC+/M8Lw26GBVnsAM7RDECwcPk+aL/rvaLYcNvCiNow==
+"@thirdweb-dev/chains@0.1.89":
+  version "0.1.89"
+  resolved "https://registry.npmjs.org/@thirdweb-dev/chains/-/chains-0.1.89.tgz"
+  integrity sha512-Nffm+vrVck8NeooHdvx3t7EAGhiqQxD8CkwfPuhHRNVMfazSIHcRjd2sRQagGu1qhs60of8RxoZSfO0uVeN2DQ==
 
 "@thirdweb-dev/contracts-js@1.3.20":
   version "1.3.20"
@@ -2074,25 +2074,25 @@
   dependencies:
     ethers "^5.7.2"
 
-"@thirdweb-dev/react-core@4.4.31":
-  version "4.4.31"
-  resolved "https://registry.npmjs.org/@thirdweb-dev/react-core/-/react-core-4.4.31.tgz"
-  integrity sha512-QCiievNDMZpyfFJPvdMccKKn3/RQMnoizY2tbY/OEtZCCod0bgszdPkVuSRZi7OAnOHYm07aTNtkW6CI7X/rww==
+"@thirdweb-dev/react-core@4.4.32":
+  version "4.4.32"
+  resolved "https://registry.npmjs.org/@thirdweb-dev/react-core/-/react-core-4.4.32.tgz"
+  integrity sha512-GEHiMmGyfQjLQREvAHP85RPxt9Ibw60r+OWW29iY+IU5tv5/iYfQHFl1j+RoY1mensZhIMOocu6zO5p2TZUs8A==
   dependencies:
     "@tanstack/react-query" "^4.36.1"
-    "@thirdweb-dev/auth" "4.1.55"
-    "@thirdweb-dev/chains" "0.1.88"
+    "@thirdweb-dev/auth" "4.1.56"
+    "@thirdweb-dev/chains" "0.1.89"
     "@thirdweb-dev/generated-abis" "^0.0.1"
-    "@thirdweb-dev/sdk" "4.0.57"
+    "@thirdweb-dev/sdk" "4.0.58"
     "@thirdweb-dev/storage" "2.0.13"
-    "@thirdweb-dev/wallets" "2.4.33"
+    "@thirdweb-dev/wallets" "2.4.34"
     mime "3.0.0"
     tiny-invariant "^1.3.3"
 
-"@thirdweb-dev/react@^4":
-  version "4.4.31"
-  resolved "https://registry.npmjs.org/@thirdweb-dev/react/-/react-4.4.31.tgz"
-  integrity sha512-m3ZlQYeUtft1KYOp/ajFvvXnQm0Osjwyx3QsGPFmbBNCMCDok64p2TqRROxZuBr0xu++o3afWFUmjCU2cAUDVA==
+"@thirdweb-dev/react@^4.4.32":
+  version "4.4.32"
+  resolved "https://registry.npmjs.org/@thirdweb-dev/react/-/react-4.4.32.tgz"
+  integrity sha512-z84edXslCbC4n22Xs0r6IR2RWm5cCKTDTnJ5uMOuz/XCyJl1jnos40bwGZC2L+XewR3oMqFJ6frkl7mLp+iETw==
   dependencies:
     "@emotion/css" "11.10.5"
     "@emotion/react" "^11.11.4"
@@ -2107,11 +2107,11 @@
     "@radix-ui/react-tabs" "^1.0.4"
     "@radix-ui/react-tooltip" "^1.0.7"
     "@tanstack/react-query" "^4.36.1"
-    "@thirdweb-dev/chains" "0.1.88"
+    "@thirdweb-dev/chains" "0.1.89"
     "@thirdweb-dev/payments" "1.0.3"
-    "@thirdweb-dev/react-core" "4.4.31"
-    "@thirdweb-dev/sdk" "4.0.57"
-    "@thirdweb-dev/wallets" "2.4.33"
+    "@thirdweb-dev/react-core" "4.4.32"
+    "@thirdweb-dev/sdk" "4.0.58"
+    "@thirdweb-dev/wallets" "2.4.34"
     buffer "^6.0.3"
     copy-to-clipboard "^3.3.3"
     detect-browser "^5.3.0"
@@ -2119,13 +2119,13 @@
     qrcode "^1.5.3"
     tiny-invariant "^1.3.3"
 
-"@thirdweb-dev/sdk@^4", "@thirdweb-dev/sdk@4.0.57":
-  version "4.0.57"
-  resolved "https://registry.npmjs.org/@thirdweb-dev/sdk/-/sdk-4.0.57.tgz"
-  integrity sha512-qy1cjsmUTpB1thBGuqFve7OLhDrczCHf89u/7x84Kty0YAP46o4F9sOlAfQeGhpdT44E3dic4fYQpYqShV2tfA==
+"@thirdweb-dev/sdk@^4", "@thirdweb-dev/sdk@4.0.58":
+  version "4.0.58"
+  resolved "https://registry.npmjs.org/@thirdweb-dev/sdk/-/sdk-4.0.58.tgz"
+  integrity sha512-xUYHI6G6KtB6LvpLZDguiiycKOg6yw81c6LU07es11VkhuE8XGIaN935epmMjcEoh4NFeItSZOK0cjMICCSI2A==
   dependencies:
     "@eth-optimism/sdk" "3.2.3"
-    "@thirdweb-dev/chains" "0.1.88"
+    "@thirdweb-dev/chains" "0.1.89"
     "@thirdweb-dev/contracts-js" "1.3.20"
     "@thirdweb-dev/crypto" "0.2.4"
     "@thirdweb-dev/generated-abis" "0.0.1"
@@ -2153,10 +2153,10 @@
     form-data "^4.0.0"
     uuid "^9.0.1"
 
-"@thirdweb-dev/wallets@2.4.33":
-  version "2.4.33"
-  resolved "https://registry.npmjs.org/@thirdweb-dev/wallets/-/wallets-2.4.33.tgz"
-  integrity sha512-L57tgljlsbaM2djKzZqa2/8645o7ufoBlpTITmGD/nXFkaW3vb0ybNgd/YxCAvmvt9XDqdgPXuOj71nKrXGeBw==
+"@thirdweb-dev/wallets@2.4.34":
+  version "2.4.34"
+  resolved "https://registry.npmjs.org/@thirdweb-dev/wallets/-/wallets-2.4.34.tgz"
+  integrity sha512-2I87WxPcEoA4bBSlceVeA/ybjN1XPiCbZsALGKmuGgl44oxn97WcmKIBvpk8kSK/cTNwIXKuiR4vdoRjrkde7w==
   dependencies:
     "@account-abstraction/contracts" "^0.5.0"
     "@blocto/sdk" "0.5.5"
@@ -2171,10 +2171,10 @@
     "@safe-global/safe-core-sdk" "^3.3.5"
     "@safe-global/safe-ethers-adapters" "0.1.0-alpha.17"
     "@safe-global/safe-ethers-lib" "^1.9.4"
-    "@thirdweb-dev/chains" "0.1.88"
+    "@thirdweb-dev/chains" "0.1.89"
     "@thirdweb-dev/contracts-js" "1.3.20"
     "@thirdweb-dev/crypto" "0.2.4"
-    "@thirdweb-dev/sdk" "4.0.57"
+    "@thirdweb-dev/sdk" "4.0.58"
     "@walletconnect/core" "^2.11.3"
     "@walletconnect/ethereum-provider" "^2.11.3"
     "@walletconnect/jsonrpc-utils" "^1.0.8"
@@ -5956,20 +5956,20 @@ pify@^5.0.0:
   resolved "https://registry.npmjs.org/pify/-/pify-5.0.0.tgz"
   integrity sha512-eW/gHNMlxdSP6dmG6uJip6FXN0EQBwm2clYYd8Wul42Cwu/DK8HEftzsapcNdYe2MfLiIwZqsDk2RDEsTE79hA==
 
+pino-abstract-transport@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.npmjs.org/pino-abstract-transport/-/pino-abstract-transport-1.1.0.tgz"
+  integrity sha512-lsleG3/2a/JIWUtf9Q5gUNErBqwIu1tUKTT3dUzaf5DySw9ra1wcqKjJjLX1VTY64Wk1eEOYsVGSaGfCK85ekA==
+  dependencies:
+    readable-stream "^4.0.0"
+    split2 "^4.0.0"
+
 pino-abstract-transport@v0.5.0:
   version "0.5.0"
   resolved "https://registry.npmjs.org/pino-abstract-transport/-/pino-abstract-transport-0.5.0.tgz"
   integrity sha512-+KAgmVeqXYbTtU2FScx1XS3kNyfZ5TrXY07V96QnUSFqo2gAqlvmaxH67Lj7SWazqsMabf+58ctdTcBgnOLUOQ==
   dependencies:
     duplexify "^4.1.2"
-    split2 "^4.0.0"
-
-pino-abstract-transport@v1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npmjs.org/pino-abstract-transport/-/pino-abstract-transport-1.1.0.tgz"
-  integrity sha512-lsleG3/2a/JIWUtf9Q5gUNErBqwIu1tUKTT3dUzaf5DySw9ra1wcqKjJjLX1VTY64Wk1eEOYsVGSaGfCK85ekA==
-  dependencies:
-    readable-stream "^4.0.0"
     split2 "^4.0.0"
 
 pino-std-serializers@^4.0.0:
@@ -5983,14 +5983,14 @@ pino-std-serializers@^6.0.0:
   integrity sha512-cHjPPsE+vhj/tnhCy/wiMh3M3z3h/j15zHQX+S9GkTBgqJuTuJzYJ4gUyACLhDaJ7kk9ba9iRDmbH2tJU03OiA==
 
 pino@^8.17.0:
-  version "8.19.0"
-  resolved "https://registry.npmjs.org/pino/-/pino-8.19.0.tgz"
-  integrity sha512-oswmokxkav9bADfJ2ifrvfHUwad6MLp73Uat0IkQWY3iAw5xTRoznXbXksZs8oaOUMpmhVWD+PZogNzllWpJaA==
+  version "8.20.0"
+  resolved "https://registry.npmjs.org/pino/-/pino-8.20.0.tgz"
+  integrity sha512-uhIfMj5TVp+WynVASaVEJFTncTUe4dHBq6CWplu/vBgvGHhvBvQfxz+vcOrnnBQdORH3izaGEurLfNlq3YxdFQ==
   dependencies:
     atomic-sleep "^1.0.0"
     fast-redact "^3.1.1"
     on-exit-leak-free "^2.1.0"
-    pino-abstract-transport v1.1.0
+    pino-abstract-transport "^1.1.0"
     pino-std-serializers "^6.0.0"
     process-warning "^3.0.0"
     quick-format-unescaped "^4.0.3"

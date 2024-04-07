@@ -1,4 +1,5 @@
 import React,{useRef,useEffect} from 'react'
+import heros from "../assets/heros.svg"
 const data ={
     "Political_Parties": [
       {
@@ -156,14 +157,16 @@ const Bonds= () => {
     return (
         <>
          <h2 className='text-4xl text-white text-center p-28'>Existing Bonds Data</h2>
+         <img src={heros} alt="svg"  className='rotate-90 w-[700px] h-[700px] absolute right-[50%]  left-[30%] z-0'/>
       <div className="w-full overflow-hidden h-[500px]" style={{ scrollBehavior: 'smooth' }} ref={sliderRef} >
-          
+      
         <div className="flex flex-row gap-20">
-         
+       
           {data.Political_Parties.map((party) => (
-            <div key={party.ID} className="bg-transparent  shadow-md rounded-lg p-4 ml-4 border flex justify-center align-middle flex-col" style={{ minWidth: '300px' }}>
+            <div key={party.ID} className=" bg-transparent  bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10 border border-gray-100
+            shadow-md rounded-lg p-4 ml-4  flex justify-center align-middle flex-col h-[200px]" style={{ minWidth: '500px' }}>
               <h3 className="text-xl font-bold mb-2 text-center">{party.Party}</h3>
-              <p className="text-gray-700 text-center ">{party.Amount_Encashed}</p>
+              <p className="text-green-500 text-center ">{party.Amount_Encashed}</p>
             </div>
           ))}
         </div>
